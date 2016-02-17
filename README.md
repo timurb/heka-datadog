@@ -1,6 +1,6 @@
 # Datadog encoder
 
-Datadog encoder for Heka.
+Datadog encoder for [Heka](http://hekad.readthedocs.org/).
 
 *Note:* experimental, use at your own risk.
 
@@ -18,9 +18,6 @@ filename = "lua_encoders/datadog.lua"
   tag_prefix = "tags."
   tag_list = "env adx"
   skip_fields = "Timestamp timestamp Metric metric Value value ExitStatus"
-
-[debug_encoder]
-type="RstEncoder"
 
 [datadog]
 type = "HttpOutput"
